@@ -23,5 +23,19 @@ lines of latitude at 0, 5, 10, 15, 20...etc degrees.
 + `cellArea` - the target cell area in km^2. The actual result will vary depending on the band of latitude
 
 
+## Example usage
+
+````
+var bfea = require('brute-force-equal-area');
+
+var latGrid = bfea.latitude(5, 12);
+var lngGrid = bfea.longitude(5, 500000)
+
+fs.writeFileSync(__dirname + '/latitude_grid.geojson', JSON.stringify(latGrid));
+fs.writeFileSync(__dirname + '/longitude_grid.geojson', JSON.stringify(lngGrid));
+
+````
+
+
 ## Authors
 Andrew Zaffos, John Czaplewski
