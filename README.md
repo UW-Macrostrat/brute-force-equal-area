@@ -30,11 +30,14 @@ lines of latitude at 0, 5, 10, 15, 20...etc degrees.
 ````
 var bfea = require('brute-force-equal-area');
 
-var latGrid = bfea.latitude(5, 12);
-var lngGrid = bfea.longitude(5, 500000)
+bfea.latitude(5, 12, function(latGrid) {
+  fs.writeFileSync(__dirname + '/latitude_grid.geojson', JSON.stringify(latGrid));
+});
 
-fs.writeFileSync(__dirname + '/latitude_grid.geojson', JSON.stringify(latGrid));
-fs.writeFileSync(__dirname + '/longitude_grid.geojson', JSON.stringify(lngGrid));
+bfea.longitude(5, 500000, function(lngGrid) {
+  fs.writeFileSync(__dirname + '/longitude_grid.geojson', JSON.stringify(lngGrid));
+});
+
 
 ````
 
