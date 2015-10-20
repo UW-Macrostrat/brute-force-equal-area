@@ -1,0 +1,31 @@
+{
+  "name": "brute-force-equal-area",
+  "version": "0.1.0",
+  "description": "Generate equal area grids",
+  "main": "index.js",
+  "dependencies": {
+    "turf-area": "^1.1.1",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/UW-Macrostrat/equal-area-grid.git"
+  },
+  "keywords": [
+    "geojson",
+    "grid",
+    "equal",
+    "area",
+    "equal-area"
+  ],
+  "author": "John J Czaplewski <jczaplew@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UW-Macrostrat/equal-area-grid/issues"
+  },
+  "homepage": "https://github.com/UW-Macrostrat/equal-area-grid"
+}

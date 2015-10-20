@@ -102,5 +102,5 @@ while lng < 180:
     lng += longitude_spacing
 
 # Write the geojson out
-with open("grid.geojson", "w") as out_geojson:
+with open("grid_lat.geojson", "w") as out_geojson:
     json.dump(geojson, out_geojson)
