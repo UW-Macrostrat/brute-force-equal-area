@@ -4,14 +4,14 @@ Generates grids with equal area polygons
 ## Install
 
 ````
-npm install bruteForceEqualArea
+npm install https://github.com/UW-Macrostrat/brute-force-equal-area.git
 ````
 
 ## API
 
 #### latitude(longitudeSpacing, latitudeSpacing)
 
-+ `longitudeSpacing`
++ `longitudeSpacing` - divide bands of latitude by `x` degrees of longitude
 + `latitudeSpacing` - the number of times a hemisphere should be cut
 
 #### longitude(latitudeSpacing, cellArea)
